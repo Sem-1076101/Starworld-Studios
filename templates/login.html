@@ -7,21 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     {% include 'bootstrap.html' %}
+    <link rel="stylesheet" href="../static/CSS/login_register.css">
+    <script src="../static/JS/login_register.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">
-            Login
-        </h1>
-        <div class="mb-3">
-            <input type="text" placeholder="Email" name="emailInput">
+<div class="container-fluid time_header_container">
+    <div class="d-flex justify-content-between align-items-center p-2">
+         <div id="time-tokyo" class="p-2 text-center">
+            Tokyo<br><span class="time"></span>
         </div>
-        <div class="mb-3">
-            <input type="password" placeholder="Password" name="passwordInput">
+        <div id="time-london" class="p-2 text-center">
+            London<br><span class="time"></span>
         </div>
-        <div class="mb-3">
-            <button type="submit" name="submitLoginButton">Login</button>
+        <div class="inner_flex_back">
+            <button class="btn-header" onclick="goBack()">BACK</button>
+        </div>
+        <div id="time-rotterdam" class="p-2 text-center">
+            Rotterdam<br><span class="time"></span>
+        </div>
+        <div id="time-newyork" class="p-2 text-center">
+            New York<br><span class="time"></span>
         </div>
     </div>
+</div>
+<div class="container mt-0 mb-3">
+    <div class="row justify-content-center">
+        <div class="col-6 col-md-4">
+            <div class="text-center mb-3">
+                <img class="image-form" src="../static/images/STARWORLD_LOGO_BLACK.PNG" alt="Starworld Logo">
+                <h2>STARWORLD STUDIOS*</h2>
+            </div>
+            <div class="mb-1">
+                <input type="text" class="custom-input" placeholder="Email" name="emailInput">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="custom-input" placeholder="Password" name="passwordInput">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn-header" name="submitLoginButton">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

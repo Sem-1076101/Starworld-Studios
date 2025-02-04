@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.time_header_container {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.inner_flex_back button {
+    font-weight: bold;
+}
+
+.time_header_container .text-center {
+    min-width: 100px; /* Maakt de vakken gelijkmatiger en de tijd goed leesbaar */
+}
+
+.btn-header {
+    padding: 10px 25px;
+    background: #000000;
+    color: #fff;
+    border: 0;
+    transition-duration: .3s;
+}
+
+.btn-header:hover {
+    background: #f8f9fa;
+    color: #000000;
+    border: 1px solid #000000;
+    transition-duration: .3s;
+}
+
+.image-form {
+    display: block; /* Zorgt ervoor dat de afbeelding geen ruimte eromheen heeft */
+    margin: 0 auto; /* Centreert de afbeelding */
+    max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder is dan de container */
+    height: auto; /* Zorg ervoor dat de afbeelding zijn verhouding behoudt */
+}
+
+.head-form {
+    text-align: center; /* Centreert de tekst onder de afbeelding */
+}
+
+h2 {
+    margin-top: -65px; /* Verwijder marge boven de h2 */
+    margin-bottom: 10px; /* Pas deze waarde aan voor meer of minder ruimte onder de h2 */
+}
+
+.custom-input {
+    background-color: #000; /* Zwarte achtergrond */
+    color: #fff; /* Witte tekst */
+    border: 2px solid transparent; /* Transparante rand voor standaardweergave */
+    padding: 10px; /* Padding voor inputvelden */
+    width: 100%; /* Volledige breedte */
+    transition: border 0.3s; /* Overgangseffect voor border */
+    transition-duration: .5s;
+}
+
+.custom-input::placeholder {
+    color: #fff; /* Witte placeholdertekst */
+}
+
+.custom-input:focus {
+    border: 2px solid #000; /* Zwarte rand bij focus */
+    background-color: #fff; /* Witte achtergrond bij focus */
+    color: #000; /* Zwarte tekst bij focus */
+    outline: none; /* Verwijder de standaard blauwe rand */
+    transition-duration: .5s;
+}
+
+/* Zorg ervoor dat de tekst zwart blijft als je typt */
+.custom-input:focus::placeholder {
+    color: #000; /* Zwarte placeholdertekst als je typt */
+    transition-duration: .5s;
+}
